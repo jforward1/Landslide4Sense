@@ -12,7 +12,7 @@ Through this project I aim to answer the following:
 - Can we achieve similar results on less input data/bands from the imagery?
 
 # Data Description
-- **Data Source:** [Landslide4Sense](https://www.kaggle.com/datasets/tekbahadurkshetri/landslide4sense?select=TrainData)
+- **Data Source:** [Landslide4Sense]([https://www.kaggle.com/datasets/tekbahadurkshetri/landslide4sense?select=TrainData](https://github.com/iarai/Landslide4Sense-2022?tab=readme-ov-file#landslide4sense-2022))
 - **14 Bands/Channels Total**
   - 12 From Sentinel-2
   - Slope
