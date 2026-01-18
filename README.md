@@ -1,7 +1,7 @@
 # Landslide4Sense Modeling
 
 ## Overview
-This project aims to build a U-Net++ deep learning model to segement landslides from relevant imagery. There is also a beginning attempt at trying to predict regions that are most susceptible to landslides.
+This project aims to build a U-Net++ deep learning model to segment landslides from relevant imagery. Remotely sensed data from Sentinel-2 is used, along with slope and DEM, to train the model to identify regions that have been affected by landslide activity. There is a start to using the model as a means to predict regions most susceptible to landslides as well.
 
 ---
 
