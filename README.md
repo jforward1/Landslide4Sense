@@ -38,7 +38,9 @@ Eventually, through continuing training and tuning, I reach a model that has imp
 
 ---
 
-![Rwanda Landslide Prediction](images/rwanda_landslide_prediction.png)
+<p align="center">
+  <img src="images/rwanda_landslide_prediction.png" width="600">
+</p>
 
 A more recent effort focused on applying the model to regions known to have large landslide activity and predict the areas that have the highest susceptibility to this activity. This serves as a method of early warning detection and emergency response. The model is applied using satellite imagery from Rwanda, including all the same bands originally trained on.
 
