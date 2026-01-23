@@ -17,3 +17,35 @@ Through this project I aim to answer the following:
   - 12 From Sentinel-2
   - Slope
   - Digital Elevation Model (DEM)
+
+---
+
+The dataset is split using 80/20 and standardized on a per-channel basis. Data augmentation is employed using random flips and rotations to improve performance and robustness. Binary focal cross entropy loss along with Adam optimizer are used with a learning rate of 1e-3.
+
+---
+
+![Early Model Prediction](images/early_predictions_landslide.png)
+
+The early model results are shown above and it's clear that this model has a general sense of where landslide activity has occurred but lacks the precision in segmenting a clear landslide boundary.
+
+---
+
+![Final Model Prediction Example 1](images/final_model_prediction2.png)
+
+![Final Model Prediction Example 2](images/final_model_prediction1.png)
+
+Eventually, through continuing training and tuning, I reach a model that has improved segmentations and is able to better capture each of regions where landslides have happened. The final F1 Score reached ~65%, which is comparable to the results from the original paper, achieving an F1 Score of around 70%.
+
+---
+
+![Rwanda Landslide Prediction](images/rwanda_landslide_prediction.png)
+
+A more recent effort focused on applying the model to regions known to have large landslide activity and predict the areas that have the highest susceptibility to this activity. This serves as a method of early warning detection and emergency response. The model is applied using satellite imagery from Rwanda, including all the same bands originally trained on.
+
+---
+
+## Tools & Methods
+- Python, NumPy, TensorFlow/Keras
+- U-Net++ architecture
+- Sentinel-2 remote sensing data
+- Geospatial preprocessing and data augmentation
